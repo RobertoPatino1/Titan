@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://dg0lswpck1bsa"]
+
+[ext_resource type="PackedScene" uid="uid://bqcgw4ety74ab" path="res://Personajes/JugadorGotas.tscn" id="2_3hubj"]
+[ext_resource type="PackedScene" uid="uid://c3ra2lco1ex0e" path="res://Hazards/gota_agua.tscn" id="2_x3aig"]
+[ext_resource type="PackedScene" uid="uid://3d50c73hg4vv" path="res://Hazards/gota_metano.tscn" id="3_w1q34"]
+
+[node name="Nivel" type="Node2D"]
+
+[node name="JugadorGotas" parent="." instance=ExtResource("2_3hubj")]
+position = Vector2(123, 306)
+
+[node name="GotaAgua" parent="." instance=ExtResource("2_x3aig")]
+position = Vector2(1461, 241)
+
+[node name="GotaMetano" parent="." instance=ExtResource("3_w1q34")]
+position = Vector2(1618, 411)
+
+[node name="GotaMetano2" parent="." instance=ExtResource("3_w1q34")]
+position = Vector2(1218, 365)
+
+[node name="GotaMetano3" parent="." instance=ExtResource("3_w1q34")]
+position = Vector2(1758, 121)
+
+[node name="GotaMetano4" parent="." instance=ExtResource("3_w1q34")]
+position = Vector2(2012, 435)
+
+[node name="GotaMetano5" parent="." instance=ExtResource("3_w1q34")]
+position = Vector2(2030, 573)
+
+[node name="GotaAgua2" parent="." instance=ExtResource("2_x3aig")]
+position = Vector2(2593, 321)
+
+[node name="GotaAgua3" parent="." instance=ExtResource("2_x3aig")]
+position = Vector2(2057, 125)
+
+[node name="GotaMetano6" parent="." instance=ExtResource("3_w1q34")]
+position = Vector2(2022, 287)
+
+[node name="GotaMetano7" parent="." instance=ExtResource("3_w1q34")]
+position = Vector2(2120, 391)
+
+[node name="GotaMetano8" parent="." instance=ExtResource("3_w1q34")]
+position = Vector2(1782, 267)
+
+[node name="GotaMetano9" parent="." instance=ExtResource("3_w1q34")]
+position = Vector2(1560, 549)
