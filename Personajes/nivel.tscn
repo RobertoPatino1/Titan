@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://ee6robx8tsux"]
+
+[ext_resource type="PackedScene" uid="uid://bhws7n1sv4aja" path="res://Personajes/jugador.tscn" id="1_b3m5x"]
+
+[node name="Nivel" type="Node2D"]
+
+[node name="Jugador" parent="." instance=ExtResource("1_b3m5x")]
+position = Vector2(553, 321)
+move_speed = 200.0
