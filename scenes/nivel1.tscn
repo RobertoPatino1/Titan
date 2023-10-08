@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://ee6robx8tsux"]
+[gd_scene load_steps=12 format=3 uid="uid://c8q80uo7yt04g"]
 
 [ext_resource type="PackedScene" uid="uid://bhws7n1sv4aja" path="res://Personajes/jugador.tscn" id="1_u0nn8"]
 [ext_resource type="Texture2D" uid="uid://caedhlbc170b8" path="res://Sprites/Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png" id="2_c2eis"]
