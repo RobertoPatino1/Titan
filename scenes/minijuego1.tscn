@@ -1,7 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://bsa8lbhiv41di"]
+[gd_scene load_steps=6 format=3 uid="uid://ej1hfleh5cug"]
 
 [ext_resource type="Script" path="res://scenes/minijuego1.gd" id="1_8pxyd"]
-[ext_resource type="PackedScene" uid="uid://cqen2wyp3nst6" path="res://Personajes/JugadorGotas.tscn" id="1_w3sct"]
+[ext_resource type="PackedScene" uid="uid://c1o3pnr3ownun" path="res://Personajes/JugadorGotas.tscn" id="1_w3sct"]
 [ext_resource type="PackedScene" uid="uid://c3ra2lco1ex0e" path="res://Hazards/gota_agua.tscn" id="2_wkpi4"]
 [ext_resource type="PackedScene" uid="uid://3d50c73hg4vv" path="res://Hazards/gota_metano.tscn" id="3_gbker"]
 

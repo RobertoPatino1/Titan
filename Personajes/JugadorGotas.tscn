@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://cqen2wyp3nst6"]
+[gd_scene load_steps=5 format=3 uid="uid://c1o3pnr3ownun"]
 
 [ext_resource type="Script" path="res://Personajes/JugadorGotas.gd" id="1_o1gcp"]
 [ext_resource type="Texture2D" uid="uid://cdc1py5cyonft" path="res://Sprites/Personajes/NaveSpritesheet.png" id="2_omj4c"]

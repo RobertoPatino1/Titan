@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3 uid="uid://betrbm4mo1f6g"]
+
+[ext_resource type="Script" path="res://interactuable_alas.gd" id="1_pe4k3"]
+[ext_resource type="Texture2D" uid="uid://dra0xl0mf4hyp" path="res://icon.svg" id="1_rfu0m"]
+[ext_resource type="PackedScene" uid="uid://c57tnvfwwleic" path="res://interactions/interaction_area.tscn" id="2_7r351"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_27u5y"]
+size = Vector2(123, 122)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_iam3n"]
+radius = 144.014
+
+[node name="StaticBody2D" type="StaticBody2D"]
+script = ExtResource("1_pe4k3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_rfu0m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_27u5y")
+
+[node name="interaction_area" parent="." instance=ExtResource("2_7r351")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interaction_area"]
+shape = SubResource("CircleShape2D_iam3n")
