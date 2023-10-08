@@ -1,6 +1,6 @@
 extends Area2D
 @export var move_speed : float = 350
-
+@export var tipo : String = "Metano"
 func _physics_process(delta):
 	var direction = Vector2.LEFT
 	
@@ -15,6 +15,7 @@ func hit():
 
 func _on_area_entered(area):
 	hit()
+
 
 
 func _on_body_entered(body):

@@ -1,6 +1,6 @@
 extends Area2D
 @export var move_speed : float = 350
-
+@export var tipo : String = "Agua"
 func _physics_process(delta):
 	var direction = Vector2.LEFT
 	
