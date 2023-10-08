@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bhws7n1sv4aja"]
 
-[ext_resource type="Script" path="res://Jugador.gd" id="1_netl6"]
+[ext_resource type="Script" path="res://Personajes/Jugador.gd" id="1_netl6"]
 [ext_resource type="Texture2D" uid="uid://dra0xl0mf4hyp" path="res://icon.svg" id="2_cy5dq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_itd1s"]
