@@ -1,20 +1,103 @@
-[gd_scene load_steps=4 format=3 uid="uid://bhws7n1sv4aja"]
+[gd_scene load_steps=9 format=3 uid="uid://bhws7n1sv4aja"]
 
 [ext_resource type="Script" path="res://Personajes/Jugador.gd" id="1_netl6"]
-[ext_resource type="Texture2D" uid="uid://dra0xl0mf4hyp" path="res://icon.svg" id="2_cy5dq"]
+[ext_resource type="Texture2D" uid="uid://dxnyhd0ijr5t5" path="res://Sprites/Personajes/spritesheetPersonaje.png" id="2_csrrr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_itd1s"]
-size = Vector2(82, 70)
+size = Vector2(46, 70)
+
+[sub_resource type="Animation" id="Animation_f063f"]
+resource_name = "walkUP"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [Rect2(2172, 126, 155, 395), Rect2(2224, 783, 155, 395), Rect2(241, 1425, 155, 395)]
+}
+
+[sub_resource type="Animation" id="Animation_wvwmt"]
+resource_name = "walkRIGHT"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [Rect2(236, 818, 130, 390), Rect2(1255, 648, 155, 390), Rect2(793, 653, 165, 390)]
+}
+
+[sub_resource type="Animation" id="Animation_0ij1t"]
+resource_name = "walkLEFT"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [Rect2(908, 1230, 130, 390), Rect2(1455, 1050, 155, 390), Rect2(1687, 653, 165, 390)]
+}
+
+[sub_resource type="Animation" id="Animation_1mx7f"]
+resource_name = "walkDOWN"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [Rect2(241, 166, 155, 395), Rect2(873, 121, 155, 395), Rect2(1515, 121, 155, 395), Rect2(241, 166, 155, 395)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_iyf7w"]
+_data = {
+"walkDOWN": SubResource("Animation_1mx7f"),
+"walkLEFT": SubResource("Animation_0ij1t"),
+"walkRIGHT": SubResource("Animation_wvwmt"),
+"walkUP": SubResource("Animation_f063f")
+}
 
 [node name="Jugador" type="CharacterBody2D"]
 position = Vector2(180, 142)
 script = ExtResource("1_netl6")
 move_speed = 200.0
-metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.625, 0.5625)
-texture = ExtResource("2_cy5dq")
+scale = Vector2(-0.195955, 0.171098)
+texture = ExtResource("2_csrrr")
+region_enabled = true
+region_rect = Rect2(1515, 121, 155, 395)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource("RectangleShape2D_itd1s")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_iyf7w")
+}
