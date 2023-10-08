@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cqen2wyp3nst6"]
 
-[ext_resource type="Script" path="res://Personajes/JugadorGotas.gd" id="1_y3l8s"]
+[ext_resource type="Script" path="res://CharacterBody2D.gd" id="1_7a3jy"]
 [ext_resource type="Texture2D" uid="uid://dvbfajg84mty6" path="res://Sprites/Personajes/spritesheet.png" id="2_fxx6y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f3pid"]
@@ -12,7 +12,7 @@ size = Vector2(10.9323, 53.7791)
 [node name="JugadorGotas" type="CharacterBody2D"]
 position = Vector2(303, 119)
 scale = Vector2(1.5, 1.5)
-script = ExtResource("1_y3l8s")
+script = ExtResource("1_7a3jy")
 move_speed = 250.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
