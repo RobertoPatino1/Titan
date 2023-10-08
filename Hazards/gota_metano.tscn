@@ -1,13 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://3d50c73hg4vv"]
 
-[ext_resource type="Script" path="res://GotaMetano.gd" id="1_00icb"]
+[ext_resource type="Script" path="res://Hazards/GotaMetano.gd" id="1_ilfyi"]
 [ext_resource type="Texture2D" uid="uid://c3x80fjcsceia" path="res://Sprites/Sprout Lands - Sprites - Basic pack/Characters/Free Chicken Sprites.png" id="2_8wv8h"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_or51l"]
 size = Vector2(30, 26)
 
 [node name="GotaMetano" type="Area2D"]
-script = ExtResource("1_00icb")
+script = ExtResource("1_ilfyi")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
