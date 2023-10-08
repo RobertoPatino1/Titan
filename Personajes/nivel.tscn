@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dg0lswpck1bsa"]
 
-[ext_resource type="PackedScene" uid="uid://cqen2wyp3nst6" path="res://Personajes/JugadorGotas.tscn" id="2_3hubj"]
+[ext_resource type="PackedScene" uid="uid://c1o3pnr3ownun" path="res://Personajes/JugadorGotas.tscn" id="2_3hubj"]
 [ext_resource type="PackedScene" uid="uid://c3ra2lco1ex0e" path="res://Hazards/gota_agua.tscn" id="2_x3aig"]
 [ext_resource type="PackedScene" uid="uid://3d50c73hg4vv" path="res://Hazards/gota_metano.tscn" id="3_w1q34"]
 

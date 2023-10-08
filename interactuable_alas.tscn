@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://btkdls60bprjs"]
+[gd_scene load_steps=6 format=3 uid="uid://betrbm4mo1f6g"]
 
 [ext_resource type="Script" path="res://interactuable_alas.gd" id="1_pe4k3"]
 [ext_resource type="Texture2D" uid="uid://dra0xl0mf4hyp" path="res://icon.svg" id="1_rfu0m"]
@@ -8,7 +8,7 @@
 size = Vector2(123, 122)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_iam3n"]
-radius = 171.0
+radius = 144.014
 
 [node name="StaticBody2D" type="StaticBody2D"]
 script = ExtResource("1_pe4k3")

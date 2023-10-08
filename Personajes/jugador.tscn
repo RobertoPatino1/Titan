@@ -8,7 +8,6 @@ size = Vector2(82, 70)
 
 [node name="Jugador" type="CharacterBody2D"]
 position = Vector2(180, 142)
-collision_layer = 2
 script = ExtResource("1_netl6")
 move_speed = 200.0
 metadata/_edit_group_ = true

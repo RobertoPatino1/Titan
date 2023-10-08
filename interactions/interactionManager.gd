@@ -40,7 +40,7 @@ func _sort_by_distance_to_player(area1,area2):
 func _input(event):
 	if event.is_action_pressed("interact") && can_interact:
 		if InteractionManager.active_areas.size()>0:
-			get_tree().change_scene_to_file("res://Personajes/character_body_2d.tscn")
+			get_tree().change_scene_to_file("res://scenes/minijuego1.tscn")
 	
 
 	
