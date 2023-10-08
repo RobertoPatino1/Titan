@@ -23,7 +23,7 @@ Our project aims to:
 
 # Goals
 
-We aspire to spark a sense of wonder and curiosity about the cosmos, fostering a passion for exploration. Together, let's reach for the stars!
+We are driven by a single, resounding aspiration: to ignite an unquenchable sense of wonder and boundless curiosity about the vast cosmos. Our mission is to nurture an unyielding passion for exploration that transcends generations and challenges the very limits of human potential. Together, let us rise above and grasp the very stars themselves, lighting a beacon of inspiration for all who dare to dream.
 
 
 # Tools
