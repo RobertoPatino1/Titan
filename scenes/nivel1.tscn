@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://c8q80uo7yt04g"]
+[gd_scene load_steps=12 format=3 uid="uid://ee6robx8tsux"]
 
 [ext_resource type="PackedScene" uid="uid://bhws7n1sv4aja" path="res://Personajes/jugador.tscn" id="1_u0nn8"]
 [ext_resource type="Texture2D" uid="uid://caedhlbc170b8" path="res://Sprites/Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png" id="2_c2eis"]
@@ -261,7 +261,7 @@ size = Vector2(23, 1271)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6w2su"]
 size = Vector2(1946.5, 38.5)
 
-[node name="Nivel" type="Node2D"]
+[node name="Nivel2" type="Node2D"]
 
 [node name="Jugador" parent="." instance=ExtResource("1_u0nn8")]
 z_index = 1
