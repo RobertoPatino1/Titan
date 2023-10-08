@@ -15,6 +15,10 @@ run/main_scene="res://scenes/nivel1.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+InteractionManager="*res://interactions/interactionManager.tscn"
+
 [input]
 
 right={

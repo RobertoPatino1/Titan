@@ -8,7 +8,7 @@ size = Vector2(46, 26)
 
 [node name="GotaMetano" type="Area2D"]
 position = Vector2(8, 0)
-scale = Vector2(-3.5, 3.471)
+scale = Vector2(-3, 2.975)
 script = ExtResource("1_ilfyi")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

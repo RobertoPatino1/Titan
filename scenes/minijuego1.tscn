@@ -1,15 +1,53 @@
-[gd_scene load_steps=6 format=3 uid="uid://ej1hfleh5cug"]
+[gd_scene load_steps=14 format=3 uid="uid://ej1hfleh5cug"]
 
 [ext_resource type="Script" path="res://scenes/minijuego1.gd" id="1_8pxyd"]
 [ext_resource type="PackedScene" uid="uid://c1o3pnr3ownun" path="res://Personajes/JugadorGotas.tscn" id="1_w3sct"]
 [ext_resource type="PackedScene" uid="uid://c3ra2lco1ex0e" path="res://Hazards/gota_agua.tscn" id="2_wkpi4"]
 [ext_resource type="PackedScene" uid="uid://3d50c73hg4vv" path="res://Hazards/gota_metano.tscn" id="3_gbker"]
+[ext_resource type="Shader" path="res://scenes/minijuego1p2.gdshader" id="4_h4kls"]
+[ext_resource type="Shader" path="res://scenes/minijuego1.gdshader" id="5_62j1r"]
+[ext_resource type="Script" path="res://scenes/Sprite2D.gd" id="5_nw5om"]
+[ext_resource type="Texture2D" uid="uid://d12genmwsqxw6" path="res://Sprites/Parallaxes/cethiel-desert-edit-small-swm-version-layer3.png" id="5_o0ws3"]
+[ext_resource type="Texture2D" uid="uid://cpnl43jly4drl" path="res://Sprites/Parallaxes/cethiel-desert-edit-small-swm-version-layer1.png" id="6_qcpgd"]
+[ext_resource type="Texture2D" uid="uid://ddhcswm20ycsn" path="res://Sprites/Parallaxes/cethiel-desert-edit-small-swm-version-layer2.png" id="6_u10pa"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_y7cv2"]
+shader = ExtResource("5_62j1r")
+shader_parameter/direction = Vector2(1, 0)
+shader_parameter/speed_scale = 0.05
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_y2hgr"]
+shader = ExtResource("4_h4kls")
+shader_parameter/direction = Vector2(1, 0)
+shader_parameter/speed_scale = 0.5
 
 [sub_resource type="LabelSettings" id="LabelSettings_wnofa"]
 font_size = 32
 
 [node name="minijuego1" type="Node2D"]
 script = ExtResource("1_8pxyd")
+
+[node name="Parallax1" type="TextureRect" parent="."]
+material = SubResource("ShaderMaterial_y7cv2")
+offset_right = 1152.0
+offset_bottom = 644.0
+texture = ExtResource("6_qcpgd")
+stretch_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(974, 341)
+scale = Vector2(1.67805, 1.57917)
+texture = ExtResource("5_o0ws3")
+script = ExtResource("5_nw5om")
+
+[node name="Parallax 2" type="TextureRect" parent="."]
+material = SubResource("ShaderMaterial_y2hgr")
+offset_left = 2.0
+offset_top = 131.0
+offset_right = 1149.0
+offset_bottom = 611.0
+texture = ExtResource("6_u10pa")
+stretch_mode = 1
 
 [node name="JugadorGotas" parent="." instance=ExtResource("1_w3sct")]
 position = Vector2(281, 312)

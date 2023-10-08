@@ -8,7 +8,7 @@ size = Vector2(57, 38)
 
 [node name="GotaAgua" type="Area2D"]
 position = Vector2(504, 88)
-scale = Vector2(2.3, 3)
+scale = Vector2(2, 2.609)
 script = ExtResource("1_dr7my")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
