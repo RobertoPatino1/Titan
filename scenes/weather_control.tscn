@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://bju1bfw5kavlt"]
+
+[ext_resource type="Script" path="res://weather_control.gd" id="1_kc3if"]
+[ext_resource type="Texture2D" uid="uid://do5qp5slde37p" path="res://Sprites/rain/rain.png" id="2_al1n7"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_u3cpy"]
+lifetime_randomness = 1.0
+emission_shape = 3
+emission_box_extents = Vector3(1000, 100, 1)
+particle_flag_disable_z = true
+gravity = Vector3(0, 98, 0)
+initial_velocity_max = 73.68
+orbit_velocity_min = 0.0
+orbit_velocity_max = 0.0
+
+[node name="weather_control" type="StaticBody2D"]
+script = ExtResource("1_kc3if")
+
+[node name="raincolor" type="CanvasModulate" parent="."]
+
+[node name="rain" type="GPUParticles2D" parent="."]
+position = Vector2(550, 4)
+amount = 100000
+process_material = SubResource("ParticleProcessMaterial_u3cpy")
+texture = ExtResource("2_al1n7")
+lifetime = 32.75
+randomness = 0.1
+collision_base_size = 0.0
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 15.0
+one_shot = true
+autostart = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(20, 20)
+texture = ExtResource("2_al1n7")
