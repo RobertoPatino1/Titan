@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://ti4qlokoi3i3"]
+
+[ext_resource type="Script" path="res://menu_principal.gd" id="1_gpuej"]
+[ext_resource type="Texture2D" uid="uid://clkftqwu03lei" path="res://recursos/menu_fondo.jpg" id="2_kvp0o"]
+[ext_resource type="Texture2D" uid="uid://dfd28iff2bm4v" path="res://recursos/logo_juego.png" id="3_lynwl"]
+
+[node name="menu_principal" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gpuej")
+
+[node name="Button" type="Button" parent="."]
+z_index = 20
+z_as_relative = false
+layout_mode = 0
+offset_left = 413.0
+offset_top = 354.0
+offset_right = 717.0
+offset_bottom = 446.0
+text = "Start Game"
+
+[node name="MenuFondo" type="Sprite2D" parent="."]
+position = Vector2(576, 330)
+scale = Vector2(1.87909, 1.69372)
+texture = ExtResource("2_kvp0o")
+
+[node name="LogoJuego" type="Sprite2D" parent="."]
+position = Vector2(579, 142)
+scale = Vector2(0.12665, 0.105592)
+texture = ExtResource("3_lynwl")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

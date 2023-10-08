@@ -20,10 +20,11 @@ script = ExtResource("1_kc3if")
 
 [node name="rain" type="GPUParticles2D" parent="."]
 position = Vector2(550, 4)
-amount = 100000
+amount = 99996
 process_material = SubResource("ParticleProcessMaterial_u3cpy")
 texture = ExtResource("2_al1n7")
 lifetime = 32.75
+speed_scale = 0.5
 randomness = 0.1
 
 [node name="Timer" type="Timer" parent="."]
