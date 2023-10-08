@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://bsa8lbhiv41di"]
+
+[ext_resource type="Script" path="res://scenes/minijuego1.gd" id="1_8pxyd"]
+[ext_resource type="PackedScene" uid="uid://cqen2wyp3nst6" path="res://Personajes/JugadorGotas.tscn" id="1_w3sct"]
+[ext_resource type="PackedScene" uid="uid://c3ra2lco1ex0e" path="res://Hazards/gota_agua.tscn" id="2_wkpi4"]
+[ext_resource type="PackedScene" uid="uid://3d50c73hg4vv" path="res://Hazards/gota_metano.tscn" id="3_gbker"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_wnofa"]
+font_size = 32
+
+[node name="minijuego1" type="Node2D"]
+script = ExtResource("1_8pxyd")
+
+[node name="JugadorGotas" parent="." instance=ExtResource("1_w3sct")]
+position = Vector2(281, 312)
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 30.0
+offset_top = 9.0
+offset_right = 173.0
+offset_bottom = 68.0
+scale = Vector2(0.995174, 0.966813)
+text = "SCORE: 0"
+label_settings = SubResource("LabelSettings_wnofa")
+
+[node name="GotaAgua" parent="." instance=ExtResource("2_wkpi4")]
+position = Vector2(1461, 241)
+
+[node name="GotaMetano" parent="." instance=ExtResource("3_gbker")]
+position = Vector2(1618, 411)
