@@ -10,7 +10,6 @@ func _physics_process(_delta):
 	)
 	$HealthBar.value = hit_points
 	$HealthLabel.text = "HP: %s" % hit_points
-	#$ScoreLabel.text = "SCORE: %s" % points
 	velocity = input_direction * move_speed	
 	move_and_slide()
 
