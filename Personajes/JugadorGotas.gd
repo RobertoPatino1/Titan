@@ -23,3 +23,8 @@ func _on_area_2d_area_entered(area):
 		print("Points: "+str(points))
 	if area.tipo == "Metano":
 		get_Hit()
+		
+func _process(delta):
+	if hit_points==0:
+		print("LOSE")
+		get_tree().change_scene_to_file("res://scenes/nivel1.tscn")

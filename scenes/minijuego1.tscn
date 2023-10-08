@@ -26,5 +26,50 @@ label_settings = SubResource("LabelSettings_wnofa")
 [node name="GotaAgua" parent="." instance=ExtResource("2_wkpi4")]
 position = Vector2(1461, 241)
 
+[node name="GotaAgua2" parent="." instance=ExtResource("2_wkpi4")]
+position = Vector2(2325, 390)
+
+[node name="GotaAgua3" parent="." instance=ExtResource("2_wkpi4")]
+position = Vector2(2486, 768)
+
+[node name="GotaAgua4" parent="." instance=ExtResource("2_wkpi4")]
+position = Vector2(2490, 158)
+
+[node name="GotaAgua5" parent="." instance=ExtResource("2_wkpi4")]
+position = Vector2(1985, 628)
+
+[node name="GotaAgua6" parent="." instance=ExtResource("2_wkpi4")]
+position = Vector2(1905, 190)
+
 [node name="GotaMetano" parent="." instance=ExtResource("3_gbker")]
-position = Vector2(1618, 411)
+position = Vector2(3221, 309)
+
+[node name="GotaMetano2" parent="." instance=ExtResource("3_gbker")]
+position = Vector2(3142, 1065)
+
+[node name="GotaMetano3" parent="." instance=ExtResource("3_gbker")]
+position = Vector2(1215, 757)
+
+[node name="GotaMetano4" parent="." instance=ExtResource("3_gbker")]
+position = Vector2(2955, 73.9999)
+
+[node name="GotaMetano5" parent="." instance=ExtResource("3_gbker")]
+position = Vector2(1021, 58.9999)
+
+[node name="GotaMetano6" parent="." instance=ExtResource("3_gbker")]
+position = Vector2(1523, 1065)
+
+[node name="GotaMetano7" parent="." instance=ExtResource("3_gbker")]
+position = Vector2(2967, 703)
+
+[node name="GotaMetano8" parent="." instance=ExtResource("3_gbker")]
+position = Vector2(2231, 96.9999)
+
+[node name="GotaMetano9" parent="." instance=ExtResource("3_gbker")]
+position = Vector2(1989, 408)
+
+[node name="GotaMetano10" parent="." instance=ExtResource("3_gbker")]
+position = Vector2(1618, 67.9999)
+
+[node name="GotaMetano11" parent="." instance=ExtResource("3_gbker")]
+position = Vector2(1742, 659)
