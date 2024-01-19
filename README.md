@@ -42,8 +42,10 @@ We are driven by a single, resounding aspiration: to ignite an unquenchable sens
 
 
 
-# Resources
-## Sprites:
+# Media
+- [Play the game!](https://singularitycoders.itch.io/unknown-titan)
+- Watch the game [trailer](https://www.youtube.com/watch?v=_hsM1zO4uEw&ab_channel=RobertoAndresPati%C3%B1oSalvatierra)
+
 
 # Members
 - **Graphic designers:** Domenica Cali, Yanela Mendoza
